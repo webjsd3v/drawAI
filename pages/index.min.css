@@ -363,10 +363,12 @@ template {
   max-width: 1440px;
   background: #fff;
   padding: 10px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1280px) {
   .page {
     max-width: 768px;
+    margin: 0 auto;
   }
 }
 
@@ -938,18 +940,33 @@ template {
   }
 }
 
-.footer__phone {
+.footer__phone-container {
+  max-height: 500px;
+  width: 100%;
+  max-width: 311px;
   position: absolute;
   left: 729px;
   top: -90px;
   border-radius: 0;
+  overflow: hidden;
+  /*  @media screen and (max-width: 1280px){
+      display: none;
+      visibility: hidden;
+    }*/
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 425px) {
+  .footer__phone-container {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.footer__phone {
+  width: 100%;
+}
+@media screen and (max-width: 425px) {
   .footer__phone {
-    left: 379px;
-    max-width: 250px;
-    top: -70px;
-    min-height: 430px;
+    display: none;
   }
 }
 

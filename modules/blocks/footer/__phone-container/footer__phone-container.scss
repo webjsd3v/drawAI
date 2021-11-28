@@ -1,0 +1,20 @@
+.footer__phone-container{
+  max-height: 500px;
+  width: 100%;
+  max-width: 311px;
+  position: absolute;
+  left: 259px +  470px;
+  top:-90px;
+  border-radius: 0;
+  overflow: hidden;
+
+/*  @media screen and (max-width: 1280px){
+    display: none;
+    visibility: hidden;
+  }*/
+
+  @media screen and (max-width: 425px){
+    display: none;
+    visibility: hidden;
+  }
+}
