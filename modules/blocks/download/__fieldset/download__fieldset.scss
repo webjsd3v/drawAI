@@ -8,4 +8,13 @@
     gap: 20px 40px;
     grid-template-areas: "name email"
                          "message message";
+
+  @media screen and (max-width: 1280px){
+    max-width: 470px;
+    margin: 100px auto 30px;
+    gap: 20px;
+    grid-template-areas: "name"
+                         "email"
+                         "message";
+  }
 }

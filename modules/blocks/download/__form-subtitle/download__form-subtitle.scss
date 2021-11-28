@@ -7,4 +7,10 @@
   text-align: center;
 
   color: rgba(17, 17, 17, 0.6);
+
+  @media screen and (max-width: 1280px){
+    margin: 24px auto 0;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }

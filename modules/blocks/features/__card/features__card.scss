@@ -7,4 +7,15 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1280px){
+    max-width: 349px;
+    min-width: 349px;
+    min-height: 284px;
+  }
+
+  @media screen and (max-width: 425px){
+    //max-width: 349px;
+    //min-width: 349px;
+  }
 }

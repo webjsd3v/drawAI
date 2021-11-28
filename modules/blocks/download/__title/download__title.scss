@@ -7,4 +7,11 @@
   max-width: 1103px;
   color: #111111;
 
+
+  @media screen and (max-width: 1280px){
+    max-width: 648px;
+    font-size: 33px;
+    line-height: 37px;
+  }
+
 }

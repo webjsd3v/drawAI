@@ -5,4 +5,12 @@
   font-size: 18px;
   line-height: 26px;
   color: rgba(255, 255, 255, 0.7);
+
+  @media screen and (max-width: 1280px){
+    margin: 0 0 250px 3px;
+    max-width: 360px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }

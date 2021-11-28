@@ -5,9 +5,11 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
-  /* or 119% */
-
   text-align: center;
-
   color: #111111;
+
+  @media screen and (max-width: 1280px){
+    font-size: 26px;
+    line-height: 31px;
+  }
 }
