@@ -1,7 +1,7 @@
-.download__input-email{
+.download__input-message{
     width: 100%;
-    max-width: 430px;
-    max-height: 54px;
+    max-width: 940px;
+    height: 100px;
     background: #FFFFFF;
     border-radius: 8px;
     border: none;
@@ -10,7 +10,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-
+  resize: none;
 
     color: #111111;
 
