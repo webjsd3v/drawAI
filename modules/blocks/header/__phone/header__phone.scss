@@ -2,4 +2,13 @@
   position: absolute;
   left: 650px + 82px;
   bottom: -30px;
+  @media screen and (max-width: 1280px){
+    left: 360px + 43px;
+    max-width: 250px;
+    bottom: -20px;
+  }
+  @media screen and (max-width: 425px){
+    position: static;
+    max-width: 260px;
+  }
 }

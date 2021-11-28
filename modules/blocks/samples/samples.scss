@@ -4,4 +4,8 @@
 
 .samples{
    margin: 120px 0 117px;
+
+  @media screen and (max-width: 1280px){
+    margin: 70px 0;
+  }
 }

@@ -1,0 +1,13 @@
+.footer__phone{
+  position: absolute;
+  left: 259px +  470px;
+  top:-90px;
+  border-radius: 0;
+
+  @media screen and (max-width: 1280px){
+    left: 300px +  79px;
+    max-width: 250px;
+    top:-70px;
+    min-height: 430px;
+  }
+}
