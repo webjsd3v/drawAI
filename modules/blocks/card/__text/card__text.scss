@@ -1,0 +1,19 @@
+.card__text{
+  margin: 40px;
+  max-width: 460px;
+  color: $card-subtitle;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media screen and (max-width: $size-desktop-sm){
+    margin: 50px 30px 30px 30px;
+    max-width: 460px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  @media screen and (max-width: $size-tablet-sm){
+    margin: 50px 20px 20px 20px;
+    max-width: 260px;
+  }
+}

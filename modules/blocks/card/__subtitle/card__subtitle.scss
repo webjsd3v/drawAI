@@ -1,0 +1,17 @@
+.card__subtitle{
+  margin: 40px auto 20px 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: $card-subtitle;
+
+  @media screen and (max-width: $size-desktop-sm){
+    margin: 30px auto 12px 30px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  @media screen and (max-width: $size-tablet-sm){
+    margin: 20px auto 12px 20px;
+  }
+}

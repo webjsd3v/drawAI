@@ -1,14 +1,58 @@
 @import "vendor/normalize";
 @import "vendor/fonts";
-@import "vendor/variables";
+@import "variables";
 @import "blocks/page/page";
+
 @import "blocks/header/header";
+@import "blocks/header/__wrapper/header__wrapper";
+@import "blocks/header/__title/header__title";
+@import "blocks/header/__subtitle/header__subtitle";
+@import "blocks/header/__link-btn/header__link-btn";
+@import "blocks/header/__logo/header__logo";
+@import "blocks/header/__phone/header__phone";
+
+@import "blocks/lists/lists";
+
+@import "blocks/content/content";
+@import "blocks/features/features";
+@import "blocks/features/__cards/features__cards";
+@import "blocks/features/__card/features__card";
+
+@import "blocks/cards/cards";
+@import "blocks/card/card";
+@import "blocks/card/__title/card__title";
+@import "blocks/card/__subtitle/card__subtitle";
+@import "blocks/card/__text/card__text";
+
+@import "blocks/samples/samples";
+@import "blocks/samples/__title/samples__title";
+@import "blocks/samples/__images/samples__images";
+@import "blocks/samples/__image/samples__image";
+
 @import "blocks/phone/phone";
 @import "blocks/link/link";
 @import "blocks/button/button";
-@import "blocks/content/content";
-@import "blocks/lists/lists";
-@import "blocks/features/features";
-@import "blocks/samples/samples";
+@import "blocks/lead/lead";
+
 @import "blocks/download/download";
+@import "blocks/download/__title/download__title";
+@import "blocks/download/__container/download__container";
+@import "blocks/download/__form/download__form";
+@import "blocks/download/__form-title/download__form-title";
+@import "blocks/download/__form-subtitle/download__form-subtitle";
+@import "blocks/download/__fieldset/download__fieldset";
+@import "blocks/download/__label-name/download__label-name";
+@import "blocks/download/__input/download__input.scss";
+@import "blocks/download/__label-email/download__label-email";
+@import "blocks/download/__label-message/download__label-message";
+@import "blocks/download/__textarea/download__textarea.scss";
+@import "blocks/download/__button/download__button";
+
 @import "blocks/footer/footer";
+
+@import "blocks/swiper/swiper";
+@import "blocks/swiper/swiper-slide";
+@import "blocks/swiper/swiper-pagination";
+@import "blocks/swiper/swiper-pagination-bullets";
+@import "blocks/swiper/swiper-pagination-bullet";
+@import "blocks/swiper/swiper-pagination-bullet-active";

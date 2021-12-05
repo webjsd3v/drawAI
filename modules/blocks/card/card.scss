@@ -1,0 +1,22 @@
+.card{
+  width: 100%;
+  min-width: 540px;
+  max-width: 540px;
+  min-height: 308px;
+  background: $card-bg;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: $size-desktop-sm){
+    max-width: 349px;
+    min-width: 349px;
+    min-height: 284px;
+  }
+
+  @media screen and (max-width: $size-tablet-sm){
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 284px;
+  }
+}

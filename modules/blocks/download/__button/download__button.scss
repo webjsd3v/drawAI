@@ -4,19 +4,30 @@
   min-height: 54px;
   max-height: 54px;
   max-width: 194px;
-  background: #222222;
-  color: white;
+  background: $main-dark;
+  color: $button-light;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   align-self: end;
 
-  @media screen and (max-width: 1280px){
+  &:hover {
+    opacity: 0.85;
+  }
+
+  @media screen and (max-width: $size-desktop-sm){
     min-height: 48px;
     max-height: 48px;
     max-width: 470px;
     align-self: center;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  @media screen and (max-width: $size-mobile-xl){
+    min-height: 44px;
+    max-height: 44px;
+    max-width: 260px;
+    font-size: 12px;
   }
 }

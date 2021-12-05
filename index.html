@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>DrawAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./pages/index.min.css">
 </head>
 <body class="page">
@@ -11,63 +13,66 @@
             <img class="header__logo" src="./images/logo/logo.svg" alt="Логотип DrawAI">
             <h1 class="header__title">Не умеете рисовать? Не беда!</h1>
             <p class="header__subtitle">С помощью нашего приложения вы можете чиркануть каляку и получить шедевр.</p>
-            <button class="button header__link-btn" type="button">Подробнее</button>
             <img class="phone header__phone" src="./images/header/header-phone.svg" alt="">
+            <button class="button header__link-btn" type="button">Подробнее</button>
         </div>
     </header>
     <main class="content">
-        <section class="features">
-            <ul class="lists features__cards">
-                <li class="features__card">
-                    <p class="features__subtitle">AI</p>
-                    <h2 class="features__title">Умный интелект приложения</h2>
-                    <p class="features__text">С помощью AI приложение анализирует картины мастеров и современных практиков рисования,
+        <section class="features swiper" data-parent="false">
+            <ul class="lists cards features__cards swiper-wrapper">
+                <li class="card features__card swiper-slide">
+                    <p class="card__subtitle">AI</p>
+                    <h2 class="card__title">Умный интелект приложения</h2>
+                    <p class="card__text">С помощью AI приложение анализирует картины мастеров и современных практиков рисования,
                         и достраивает картину за вас.</p>
                 </li>
-                <li class="features__card">
-                    <p class="features__subtitle">Ч/Б и Цвет</p>
-                    <h2 class="features__title">Рисуйте в любом стиле</h2>
-                    <p class="features__text">Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в любой ситуации.</p>
+                <li class="card features__card swiper-slide">
+                    <p class="card__subtitle">Ч/Б и Цвет</p>
+                    <h2 class="card__title">Рисуйте в любом стиле</h2>
+                    <p class="card__text">Будь то карандашная каляка-маляка или цветное произведение, приложение поможет в любой ситуации.</p>
                 </li>
             </ul>
+            <div class="swiper-pagination"></div>
         </section>
-        <section class="samples">
+        <section class="samples swiper" data-parent="false">
             <h2 class="samples__title">Чик-чирик и ваша каляка превращается в изумительное произведение искусства.</h2>
-            <ul class="lists samples__images">
-                <li><img class="phone samples__image" src="./images/samples/samlpe-first.svg" alt="Первое Изображение"></li>
-                <li><img class="phone samples__image" src="./images/samples/sample-second.svg" alt="Второе Изображение"></li>
-                <li><img class="phone samples__image" src="./images/samples/sample-third.svg" alt="Третье Изображение"></li>
+            <ul class="lists samples__images swiper-wrapper">
+                <li class="swiper-slide phone"><img class=" samples__image" src="./images/samples/samlpe-first.svg" alt="Первое Изображение"></li>
+                <li class="swiper-slide phone"><img class=" samples__image" src="./images/samples/sample-second.svg" alt="Второе Изображение"></li>
+                <li class="swiper-slide phone"><img class=" samples__image" src="./images/samples/sample-third.svg" alt="Третье Изображение"></li>
             </ul>
+            <div class="swiper-pagination"></div>
         </section>
-        <section class="features">
-            <ul class="lists features__cards">
-                <li class="features__card">
-                    <p class="features__subtitle">Быстро</p>
-                    <h2 class="features__title">Проблем с рисованием — нет</h2>
-                    <p class="features__text">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и многие другие...</p>
+        <section class="lead swiper" data-parent="false">
+            <ul class="lists cards lead__cards swiper-wrapper">
+                <li class="card lead__card swiper-slide">
+                    <p class="card__subtitle">Быстро</p>
+                    <h2 class="card__title">Проблем с рисованием — нет</h2>
+                    <p class="card__text">Рисуйте в приложении доступными кистями: карандаш, маркер, линер, масляная кисть и многие другие...</p>
                 </li>
-                <li class="features__card">
-                    <p class="features__subtitle">Просто</p>
-                    <h2 class="features__title">Нарисовали, преобразовали, сохранили</h2>
-                    <p class="features__text">Раз, два, три, больше нечего тут рассказать.</p>
+                <li class="card lead__card swiper-slide">
+                    <p class="card__subtitle">Просто</p>
+                    <h2 class="card__title">Нарисовали, преобразовали, сохранили</h2>
+                    <p class="card__text">Раз, два, три, больше нечего тут рассказать.</p>
                 </li>
             </ul>
+            <div class="swiper-pagination"></div>
         </section>
         <section class="download">
             <h2 class="download__title">Качайте приложение и улучшайте свои художества, а потом хвастайтесь ими!</h2>
             <div class="download__container">
-                <form class="download__form">
+                <form class="download__form" name="formDownload">
                     <h3 class="download__form-title">Хотите нам что-то посоветовать?</h3>
                     <p class="download__form-subtitle">Оставьте заявку и мы свяжемся с вами.</p>
                     <fieldset class="download__fieldset">
-                        <label class="download__label-name" for="name">
-                            <input class="download__input-name" type="text"  placeholder="Ваше Имя" id="name">
+                        <label class="download__label download__label-name" for="name">
+                            <input class="download__input" type="text"  placeholder="Ваше Имя" id="name">
                         </label>
-                        <label class="download__label-email" for="email">
-                            <input class="download__input-email" type="email" placeholder="Контактный Email" id="email">
+                        <label class="download__label download__label-email" for="email">
+                            <input class="download__input" type="email" placeholder="Контактный Email" id="email">
                         </label>
-                        <label class="download__label-message" for="message">
-                            <textarea class="download__input-message"  placeholder="Сообщение" id="message"></textarea>
+                        <label class="download__label download__label-message" for="message">
+                            <textarea class="download__textarea"  placeholder="Сообщение" id="message"></textarea>
                         </label>
                     </fieldset>
                     <button class="button download__button" type="button">Оставить заявку</button>
@@ -77,11 +82,15 @@
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
-            <h3 class="footer__title">Хотите скачать приложение?</h3>
+            <h2 class="footer__title">Хотите скачать приложение?</h2>
             <p class="footer__subtitle">Качайте в ЭпСтор и ГуглПлэй.</p>
-            <button class="button footer__button">Уже скоро!</button>
-            <img class="phone footer__phone" src="./images/footer/footer.svg" alt="">
+            <button class="button footer__button" type="button" disabled>Уже скоро!</button>
+            <div class="phone footer__phone-container">
+                <img class="footer__phone" src="./images/footer/footer.svg" alt="">
+            </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

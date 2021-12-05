@@ -1,0 +1,23 @@
+.footer__phone-container{
+  max-height: 500px;
+  min-height: 500px;
+  width: 100%;
+  max-width: 311px;
+  position: absolute;
+  left: 259px +  470px;
+  top:-90px;
+  border-radius: 0;
+  overflow: hidden;
+
+  @media screen and (max-width: $size-desktop-sm){
+    max-height: 432px;
+    min-height: 432px;
+    left: 79px +  300px;
+    top:-82px;
+  }
+
+  @media screen and (max-width: $size-tablet-sm){
+    display: none;
+    visibility: hidden;
+  }
+}

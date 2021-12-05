@@ -1,0 +1,10 @@
+.lead__cards{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (max-width: $size-tablet-sm){
+    /* flex-direction: column;
+     align-items: center;*/
+  }
+}

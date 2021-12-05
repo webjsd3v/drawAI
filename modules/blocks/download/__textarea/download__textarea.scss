@@ -1,0 +1,33 @@
+.download__textarea{
+  width: 100%;
+  max-width: 940px;
+  height: 100px;
+  background: $input-bg;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 20px ;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  resize: none;
+
+  color: $input-text;
+
+  &::placeholder {
+    color: $input-placeholder;
+  }
+
+  &:focus{
+    outline-color: $input-outline;
+  }
+
+  @media screen and (max-width: $size-desktop-sm){
+    max-width: 430px;
+  }
+
+  @media screen and (max-width: $size-mobile-xl){
+    max-width: 220px;
+    font-size: 12px;
+  }
+}

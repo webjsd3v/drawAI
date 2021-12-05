@@ -1,10 +1,5 @@
 .page{
-  font-family: 'Inter', sans-serif;
-  max-width: 1440px;
-  background: #fff;
+  font-family: $font;
+  background: $page-bg;
   padding: 10px;
-
-  @media screen and (max-width: 1280px){
-    max-width: 768px;
-  }
 }

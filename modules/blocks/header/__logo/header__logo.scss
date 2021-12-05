@@ -1,7 +1,8 @@
 .header__logo{
   margin: 0 0 57px 3px;
 
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: $size-desktop-sm){
     margin: 0 0 48px 0;
   }
+
 }

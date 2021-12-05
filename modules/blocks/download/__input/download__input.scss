@@ -1,8 +1,8 @@
-.download__input-name{
+.download__input{
   width: 100%;
   max-width: 430px;
   max-height: 54px;
-  background: #FFFFFF;
+  background: $input-bg;
   border-radius: 8px;
   border: none;
   padding: 15px 20px ;
@@ -12,13 +12,18 @@
   line-height: 24px;
 
 
-  color: #111111;
+  color: $input-text;
 
   &::placeholder {
-    color: rgba(17, 17, 17, 0.3);
+    color: $input-placeholder;
   }
 
   &:focus{
-    outline-color: #E4E4E4;
+    outline-color: $input-outline;
+  }
+
+  @media screen and (max-width: $size-mobile-xl){
+    max-width: 220px;
+    font-size: 12px;
   }
 }
