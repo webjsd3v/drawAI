@@ -1,4 +1,4 @@
-.features__title{
+.card__title{
   margin: 0 0 0 39px;
   font-style: normal;
   font-weight: 600;
@@ -7,8 +7,9 @@
   width: 100%;
   max-width: 460px;
   min-height: 76px;
+  color: $card-title;
 
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: $size-desktop-sm){
     margin: 0 0 0 30px;
     min-height: 62px;
     max-width: 289px;
@@ -16,7 +17,8 @@
     line-height: 31px;
   }
 
-  @media screen and (max-width: 425px){
-    max-width: 708px;
+  @media screen and (max-width: $size-tablet-sm){
+    max-width: 260px;
+    margin: 0 0 0 20px;
   }
 }

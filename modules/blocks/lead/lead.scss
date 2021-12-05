@@ -1,0 +1,14 @@
+.lead{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+
+  @media screen and (max-width: $size-desktop-sm){
+    max-width: 708px;
+    max-height: 284px;
+  }
+
+  @media screen and (max-width: $size-mobile-xl){
+    max-width: 300px;
+  }
+}

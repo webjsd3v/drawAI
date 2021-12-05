@@ -4,14 +4,26 @@
   height: 100%;
   max-height: 54px;
   max-width: 240px;
-  background: #FFFFFF;
+  background: $button-light;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  color: $main-dark;
 
-  @media screen and (max-width: 1280px){
+  &:hover {
+    opacity: 0.93;
+  }
+
+  @media screen and (max-width: $size-desktop-sm){
     margin: 0;
     max-height: 48px;
     font-size: 14px;
+  }
+
+  @media screen and (max-width: $size-tablet-sm){
+/*    margin: 50px 0 0 0;*/
+    max-height: 44px;
+    max-width: 260px;
+    font-size: 12px;
   }
 }

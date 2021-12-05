@@ -6,10 +6,14 @@
   font-size: 32px;
   line-height: 38px;
   text-align: center;
-  color: #111111;
+  color: $card-title;
 
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: $size-desktop-sm){
     font-size: 26px;
     line-height: 31px;
+  }
+
+  @media screen and (max-width: $size-mobile-xl){
+    max-width: 260px;
   }
 }

@@ -1,5 +1,9 @@
 .samples__image{
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: $size-desktop-sm){
     max-width: 226px;
+  }
+
+  @media screen and (max-width: $size-mobile-xl){
+    max-width: 260px;
   }
 }

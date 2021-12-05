@@ -1,17 +1,23 @@
 .download__title{
-  margin: 0;
+  margin: 0 auto;
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 69px;
   max-width: 1103px;
-  color: #111111;
+  color: $dark-title;
 
 
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: $size-desktop-sm){
     max-width: 648px;
     font-size: 33px;
     line-height: 37px;
+  }
+
+  @media screen and (max-width: $size-mobile-xl){
+    max-width: 260px;
+    font-size: 26px;
+    line-height: 31px;
   }
 
 }

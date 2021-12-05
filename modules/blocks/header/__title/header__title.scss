@@ -1,19 +1,19 @@
 .header__title{
-  color: #FFFFFF;
+  color: $light-title;
   font-weight: bold;
   font-size: 60px;
   line-height: 69px;
   max-width: 650px;
   margin: 0 0 29px 0;
 
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: $size-desktop-sm){
     max-width: 370px;
     font-size: 33px;
     line-height: 37px;
     margin: 0 0 20px 0;
   }
 
-  @media screen and (max-width: 425px){
+  @media screen and (max-width: $size-tablet-sm){
     font-size: 24px;
     line-height: 29px;
     max-width: 260px;

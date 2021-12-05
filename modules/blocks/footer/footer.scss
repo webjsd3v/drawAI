@@ -1,20 +1,28 @@
 @import "__wrapper/footer__wrapper";
 @import "__title/footer__title";
 @import "__subtitle/footer__subtitle";
+@import "__phone-container/footer__phone-container";
 @import "__button/footer__button";
 @import "__phone/footer__phone";
 
 .footer{
-  margin: 120px 0 0;
-  background: #222222;
+  margin: 120px auto 0;
+  background: $main-dark;
   min-height: 470px;
   width: 100%;
   max-width: 1420px;
   border-radius: 20px;
   display: flex;
 
-  @media screen and (max-width: 1280px){
-    margin: 70px 0 0;
+  @media screen and (max-width: $size-desktop-sm){
+    margin: 70px auto 0;
     min-height: 400px;
+    max-width: 748px;
+  }
+
+  @media screen and (max-width: $size-mobile-xl){
+    margin: 70px auto 0;
+    min-height: 266px;
+    max-width: 300px;
   }
 }

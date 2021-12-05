@@ -3,13 +3,13 @@
   max-width: 650px;
   margin: 30px 82px 0 157px;
 
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: $size-desktop-sm){
     margin: 30px 50px 0 50px;
     max-width: 360px;
   }
 
-  @media screen and (max-width: 425px){
-    margin: 20px;
+  @media screen and (max-width: $size-tablet-sm){
+    margin: 0 auto;
     max-width: 260px;
   }
 }

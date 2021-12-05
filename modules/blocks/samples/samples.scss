@@ -1,11 +1,7 @@
-@import "__title/samples__title";
-@import "__images/samples__images";
-@import "__image/samples__image";
-
 .samples{
-   margin: 120px 0 117px;
+   margin: 95px auto 92px;
 
-  @media screen and (max-width: 1280px){
-    margin: 70px 0;
+  @media screen and (max-width: $size-desktop-sm){
+    margin: 46px auto 32px;
   }
 }

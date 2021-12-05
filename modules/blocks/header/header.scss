@@ -1,25 +1,23 @@
-@import "__wrapper/header__wrapper";
-@import "__title/header__title";
-@import "__subtitle/header__subtitle";
-@import "__link-btn/header__link-btn";
-@import "__logo/header__logo";
-@import "__phone/header__phone";
-
 .header{
-  background: #222222;
+  margin: 0 auto;
+  background: $main-dark;
   min-height: 640px;
-  width: 100%;
   border-radius: 20px;
   display: flex;
   max-width: 1420px;
 
-  @media screen and (max-width: 1280px){
+  @media screen and (max-width: $size-desktop-sm){
     max-width: 748px;
     min-height: 602px;
   }
 
-  @media screen and (max-width: 425px){
-    max-width: 300px;
-    min-height: 898px;
+  @media screen and (max-width: $size-tablet-sm){
+    padding: 20px;
+    min-height: 858px;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: $size-mobile-xl){
+    max-width: 260px;
   }
 }

@@ -1,0 +1,10 @@
+.swiper-pagination{
+  position: relative;
+  bottom: unset;
+  margin-top: 10px;
+  display: none;
+
+  @media screen and (max-width: $size-mobile-xl){
+    display: block;
+  }
+}

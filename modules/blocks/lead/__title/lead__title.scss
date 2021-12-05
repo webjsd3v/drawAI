@@ -1,0 +1,23 @@
+.lead__title{
+  margin: 0 0 0 39px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  width: 100%;
+  max-width: 460px;
+  min-height: 76px;
+
+  @media screen and (max-width: $size-desktop-sm){
+    margin: 0 0 0 30px;
+    min-height: 93px;
+    max-width: 289px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  @media screen and (max-width: $size-tablet-sm){
+    max-width: 260px;
+    margin: 0 0 0 20px;
+  }
+}
